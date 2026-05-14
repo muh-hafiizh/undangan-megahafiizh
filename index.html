@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Undangan Pernikahan — Muhammad Hafiizh &amp; Mega Silviyati</title>
+		<meta
+			name="description"
+			content="Dengan penuh syukur, kami mengundang kehadiranmu dalam pernikahan Muhammad Hafiizh &amp; Mega Silviyati, 28 Agustus 2022."
+		/>
+
+		<!-- ── Google Fonts ── -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- ── Supabase JS ── -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- ══════════════════════════════════════════ -->
+		<!-- ── SECTION: Cover / Opening ── -->
+		<!-- ══════════════════════════════════════════ -->
+		<section id="cover" class="cover-section">
+			<div class="cover-bg">
+				<div class="ornament ornament-tl"></div>
+				<div class="ornament ornament-br"></div>
+				<div class="geo-pattern"></div>
+			</div>
+
+			<div class="cover-content">
+				<!-- Bismillah SVG Stroke Animation -->
+				<div class="bismillah-wrap">
+					<svg
+						class="bismillah-svg"
+						viewBox="0 0 400 80"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<text class="bismillah-text" x="200" y="60" text-anchor="middle">
+							بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+						</text>
+					</svg>
+				</div>
+
+				<p class="cover-label">Kepada Yth.</p>
+				<p class="guest-name" id="guestName">Tamu Undangan</p>
+				<p class="cover-sub">
+					Kami mengundang kehadiranmu dalam momen sakral ini
+				</p>
+
+				<div class="cover-divider">
+					<span class="divider-star">✦</span>
+				</div>
+
+				<h1 class="cover-couple">
+					<span class="couple-his">Muhammad Hafiizh</span>
+					<span class="couple-amp">&amp;</span>
+					<span class="couple-her">Mega Silviyati</span>
+				</h1>
+
+				<p class="cover-date">Ahad, 28 Agustus 2022</p>
+
+				<button class="btn-open" id="btnOpen" onclick="openInvitation()">
+					<span class="btn-open-text">Buka Undangan</span>
+					<span class="btn-open-icon">↓</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- ── WRAPPER: Konten utama (tersembunyi sebelum dibuka) ── -->
+		<div id="mainContent" class="main-content hidden">
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Ayat & Tagline ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="ayat" class="ayat-section reveal">
+				<div class="container">
+					<div class="star-ornament">✦ ✦ ✦</div>
+					<blockquote class="ayat-text">
+						وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+						لِّتَسْكُنُوا إِلَيْهَا
+					</blockquote>
+					<p class="ayat-translation">
+						"Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan
+						pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+						dan merasa tenteram kepadanya."
+					</p>
+					<p class="ayat-source">— QS. Ar-Rum: 21</p>
+					<div class="tagline">Bersama Menggapai Ridho Allah</div>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Mempelai ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="mempelai" class="mempelai-section reveal">
+				<div class="container">
+					<p class="section-label">
+						Dengan memohon ridho dan rahmat Allah SWT, kami yang berbahagia
+					</p>
+
+					<div class="mempelai-grid">
+						<!-- Mempelai Pria -->
+						<div class="mempelai-card reveal">
+							<div class="mempelai-icon">☽</div>
+							<h2 class="mempelai-name">Muhammad Hafiizh</h2>
+							<p class="mempelai-child">Putra dari</p>
+							<p class="mempelai-parents">Bapak Supriadi</p>
+							<p class="mempelai-parents">&amp; Ibu Sri</p>
+						</div>
+
+						<div class="mempelai-center reveal">
+							<div class="and-symbol">&amp;</div>
+						</div>
+
+						<!-- Mempelai Wanita -->
+						<div class="mempelai-card reveal">
+							<div class="mempelai-icon">✿</div>
+							<h2 class="mempelai-name">Mega Silviyati</h2>
+							<p class="mempelai-child">Putri dari</p>
+							<p class="mempelai-parents">Bapak Ikin</p>
+							<p class="mempelai-parents">&amp; Ibu Neni</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Our Story ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="story" class="story-section reveal">
+				<div class="container">
+					<div class="section-header reveal">
+						<p class="section-eyebrow">Kisah Kami</p>
+						<h2 class="section-title">Dipertemukan dengan Cara Terbaik</h2>
+					</div>
+
+					<div class="story-content reveal">
+						<div class="story-quote-mark">"</div>
+						<p class="story-text">
+							Pertemuan yang tak direncanakan, namun Allah yang mengaturnya
+							dengan sempurna. Melalui jalan ta'aruf yang berkah — dikenalkan,
+							dikenal, lalu dipersatukan dalam ikatan yang paling suci.
+							Pelan-pelan kami saling mengenal secara personal dan keluarga,
+							hingga tibalah hari yang paling dinantikan.
+						</p>
+						<div class="story-quote-mark story-quote-end">"</div>
+					</div>
+
+					<div class="story-tags reveal">
+						<span class="story-tag">Ta'aruf</span>
+						<span class="story-dot">✦</span>
+						<span class="story-tag">Bersama Menggapai Ridho Allah</span>
+						<span class="story-dot">✦</span>
+						<span class="story-tag">Alhamdulillah</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Info Akad & Resepsi ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="acara" class="acara-section reveal">
+				<div class="container">
+					<div class="section-header reveal">
+						<p class="section-eyebrow">Detail Acara</p>
+						<h2 class="section-title">Hari yang Penuh Berkah</h2>
+					</div>
+
+					<div class="acara-grid">
+						<!-- Akad -->
+						<div class="acara-card reveal">
+							<div class="acara-icon-wrap">
+								<span class="acara-icon">🕌</span>
+							</div>
+							<h3 class="acara-type">Akad Nikah</h3>
+							<div class="acara-detail">
+								<p class="acara-day">Ahad, 28 Agustus 2022</p>
+								<p class="acara-time">Pukul 10.00 WIB</p>
+							</div>
+							<div class="acara-divider"></div>
+							<div class="acara-place">
+								<p class="acara-place-name">Ruang Serbaguna</p>
+								<p class="acara-place-sub">Masjid As-Sunnah Cirebon</p>
+							</div>
+							<a
+								href="https://maps.google.com/?q=Masjid+As-Sunnah+Cirebon"
+								target="_blank"
+								class="btn-maps"
+							>
+								<span>Buka Google Maps</span>
+								<span class="btn-maps-icon">↗</span>
+							</a>
+						</div>
+
+						<!-- Resepsi -->
+						<div class="acara-card reveal">
+							<div class="acara-icon-wrap">
+								<span class="acara-icon">🌿</span>
+							</div>
+							<h3 class="acara-type">Resepsi Pernikahan</h3>
+							<div class="acara-detail">
+								<p class="acara-day">Ahad, 28 Agustus 2022</p>
+								<p class="acara-time">Pukul 11.00 – 15.00 WIB</p>
+							</div>
+							<div class="acara-divider"></div>
+							<div class="acara-place">
+								<p class="acara-place-name">Ruang Serbaguna</p>
+								<p class="acara-place-sub">Masjid As-Sunnah Cirebon</p>
+							</div>
+							<a
+								href="https://maps.google.com/?q=Masjid+As-Sunnah+Cirebon"
+								target="_blank"
+								class="btn-maps"
+							>
+								<span>Buka Google Maps</span>
+								<span class="btn-maps-icon">↗</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Countdown Timer ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="countdown" class="countdown-section reveal">
+				<div class="container">
+					<p class="section-eyebrow">Menghitung Hari</p>
+					<div id="countdownDisplay" class="countdown-grid">
+						<div class="countdown-item">
+							<span class="countdown-num" id="cdDays">00</span>
+							<span class="countdown-label">Hari</span>
+						</div>
+						<span class="countdown-sep">:</span>
+						<div class="countdown-item">
+							<span class="countdown-num" id="cdHours">00</span>
+							<span class="countdown-label">Jam</span>
+						</div>
+						<span class="countdown-sep">:</span>
+						<div class="countdown-item">
+							<span class="countdown-num" id="cdMinutes">00</span>
+							<span class="countdown-label">Menit</span>
+						</div>
+						<span class="countdown-sep">:</span>
+						<div class="countdown-item">
+							<span class="countdown-num" id="cdSeconds">00</span>
+							<span class="countdown-label">Detik</span>
+						</div>
+					</div>
+					<p id="countdownMessage" class="countdown-msg hidden"></p>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Galeri Foto ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="galeri" class="galeri-section reveal">
+				<div class="container">
+					<div class="section-header reveal">
+						<p class="section-eyebrow">Momen Kami</p>
+						<h2 class="section-title">Galeri Foto</h2>
+					</div>
+					<div class="galeri-grid" id="galeriGrid">
+						<!-- Diisi via JS dari array PHOTOS -->
+					</div>
+				</div>
+
+				<!-- Lightbox -->
+				<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+					<button class="lightbox-close" onclick="closeLightbox()">✕</button>
+					<button class="lightbox-prev" onclick="lightboxPrev(event)">‹</button>
+					<img
+						id="lightboxImg"
+						src=""
+						alt="Foto Galeri"
+						onclick="event.stopPropagation()"
+					/>
+					<button class="lightbox-next" onclick="lightboxNext(event)">›</button>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: RSVP ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="rsvp" class="rsvp-section reveal">
+				<div class="container">
+					<div class="section-header reveal">
+						<p class="section-eyebrow">Konfirmasi Kehadiran</p>
+						<h2 class="section-title">Apakah Kamu Bisa Hadir?</h2>
+						<p class="section-desc">
+							Kehadiranmu adalah kebahagiaan terbesar bagi kami
+						</p>
+					</div>
+
+					<div class="rsvp-form-wrap reveal">
+						<div id="rsvpForm">
+							<div class="form-group">
+								<label class="form-label" for="rsvpName">Nama Lengkap</label>
+								<input
+									type="text"
+									id="rsvpName"
+									class="form-input"
+									placeholder="Masukkan nama lengkap kamu"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label">Konfirmasi Kehadiran</label>
+								<div class="radio-group">
+									<label class="radio-card">
+										<input type="radio" name="attendance" value="hadir" />
+										<span class="radio-content">
+											<span class="radio-icon">✓</span>
+											<span class="radio-text">Insya Allah Hadir</span>
+										</span>
+									</label>
+									<label class="radio-card">
+										<input type="radio" name="attendance" value="tidak_hadir" />
+										<span class="radio-content">
+											<span class="radio-icon">✗</span>
+											<span class="radio-text">Berhalangan Hadir</span>
+										</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="form-group" id="guestCountGroup">
+								<label class="form-label" for="guestCount">Jumlah Tamu</label>
+								<select id="guestCount" class="form-input form-select">
+									<option value="1">1 orang</option>
+									<option value="2">2 orang</option>
+									<option value="3">3 orang</option>
+									<option value="4">4 orang</option>
+									<option value="5">5 orang</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label" for="rsvpMessage"
+									>Pesan &amp; Doa (opsional)</label
+								>
+								<textarea
+									id="rsvpMessage"
+									class="form-input form-textarea"
+									placeholder="Tulis doa atau pesan untuk kedua mempelai..."
+									rows="3"
+								></textarea>
+							</div>
+
+							<button class="btn-submit" id="btnRsvp" onclick="submitRsvp()">
+								<span id="rsvpBtnText">Kirim Konfirmasi</span>
+							</button>
+						</div>
+
+						<div id="rsvpSuccess" class="rsvp-success hidden">
+							<div class="success-icon">✦</div>
+							<h3 class="success-title" id="rsvpSuccessMsg">
+								Jazakumullahu Khairan!
+							</h3>
+							<p class="success-sub">
+								Konfirmasimu sudah kami terima. Semoga Allah melancarkan
+								perjalananmu.
+							</p>
+						</div>
+
+						<div id="rsvpError" class="rsvp-error hidden">
+							<p id="rsvpErrorMsg">Terjadi kesalahan. Silakan coba lagi.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Ucapan & Doa ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<section id="ucapan" class="ucapan-section reveal">
+				<div class="container">
+					<div class="section-header reveal">
+						<p class="section-eyebrow">Ucapan &amp; Doa</p>
+						<h2 class="section-title">Titip Doa untuk Kami</h2>
+					</div>
+
+					<!-- Form Ucapan -->
+					<div class="wish-form-wrap reveal">
+						<div class="form-group">
+							<input
+								type="text"
+								id="wishName"
+								class="form-input"
+								placeholder="Nama kamu"
+								maxlength="60"
+							/>
+						</div>
+						<div class="form-group">
+							<textarea
+								id="wishMessage"
+								class="form-input form-textarea"
+								placeholder="Tulis doa &amp; ucapan terbaikmu..."
+								rows="3"
+								maxlength="300"
+							></textarea>
+							<span class="char-counter"
+								><span id="wishCounter">0</span>/300</span
+							>
+						</div>
+						<button
+							class="btn-submit btn-wish"
+							id="btnWish"
+							onclick="submitWish()"
+						>
+							<span id="wishBtnText">Kirim Ucapan</span>
+						</button>
+					</div>
+
+					<!-- Daftar Ucapan -->
+					<div class="wish-list" id="wishList">
+						<div class="wish-loading" id="wishLoading">Memuat ucapan...</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ══════════════════════════════════════════ -->
+			<!-- ── SECTION: Footer ── -->
+			<!-- ══════════════════════════════════════════ -->
+			<footer id="footer" class="footer-section reveal">
+				<div class="container">
+					<div class="footer-ornament">✦</div>
+					<h2 class="footer-couple">
+						Muhammad Hafiizh<br /><span class="footer-amp">&amp;</span
+						><br />Mega Silviyati
+					</h2>
+					<p class="footer-date">28 · 08 · 2022</p>
+					<p class="footer-closing">
+						Kehadiran dan doa restumu adalah hadiah terindah bagi kami.<br />
+						<em>Jazakumullahu khairan katsiran.</em>
+					</p>
+					<div class="footer-divider">✦ ✦ ✦</div>
+					<p class="footer-credit">Dibuat dengan cinta &amp; doa 🤍</p>
+				</div>
+			</footer>
+		</div>
+		<!-- end #mainContent -->
+
+		<!-- ── Musik Button (fixed) ── -->
+		<button
+			class="music-btn"
+			id="musicBtn"
+			onclick="toggleMusic()"
+			title="Play/Pause Musik"
+			style="display: none"
+		>
+			<span class="music-icon" id="musicIcon">♪</span>
+		</button>
+
+		<script src="app.js"></script>
+	</body>
+</html>
